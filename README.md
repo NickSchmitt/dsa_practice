@@ -17,6 +17,8 @@ function bobIsFirst(people){
   return people[0] == 'bob'
 }
 ```
+O(1)
+Accessing an element from an array means that it is given the location to read the data from and does not need to iterate through to find the data, hence it will be a constant O regardless of how big the array is
 ---
 Function 2 Time Complexity:
 
@@ -51,6 +53,8 @@ function sort(list){
   return list;
 }
 ```
+worst case: O(N^2)
+Nested for loops create iterations within iterations, which take up both time and memory.
 
 ---
 
