@@ -35,6 +35,8 @@ function wordOccurrence(word, phrase){
   return result
 }
 ```
+worst case: 0(N)?
+ From the looks of it, it's a for loop that iterates through a split phrase that becomes an array of the separate values of that string, and determines if the lowercase version of the word argument is the same as that within the array.  If it is, it adds to the result value by 1.  I would think this is O(N) because it only iterates once through until the end of the array and then stops.  The output is dependent on each iterative step.
 ---
 Function 3 Time Complexity:
 
@@ -61,10 +63,13 @@ Nested for loops create iterations within iterations, which take up both time an
 ### Written Questions
 
 - What method would you use to look up a word in a dictionary (book, not Python)?
+If your knowledge of a word is just a vague idea of how to spell it and the first letter, I'd go , to the section for that letter, basically using recursion and going by sequential letter alphabetically until i've reached my word.
 
 - Imagine you have a closet full of shirts. What can you do to organize your shirts for easy retrieval?
+It depends on how you prefer to retrieve them.  If you don't mind what color, but like to reach for something based on weather, then organizing by sleeve length and fabric type are helpful.  If you care what color and what type, then organizing by weather first and within those weather-organized sections creating the same color gradient for each section might be best.  In general, I imagine it's easier to organize in multiple ways in case the data is used for a different purpose or by a different person/programmer in the future.   Mine personally vacillate between the dryer and an amorphous pile near the dresser that almost gives the impression that they're going to be folded any day now.
 
 - Describe advantages and disadvantages of the most popular sorting algorithms.
+Some of the most popular sorting algorithms include quick sort and merge sort.
 
 ---
 
