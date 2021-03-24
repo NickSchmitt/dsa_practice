@@ -158,3 +158,14 @@ function getNode(head, positionFromTail) {
     return thisNode.data
 }
 ```
+
+```python
+def getNode(head, positionFromTail):
+  temp = head
+  for x in head:
+    while(head)
+    head = head.next
+    if(i >= positionFromTail):
+      temp = temp.next
+  return temp.data
+```
