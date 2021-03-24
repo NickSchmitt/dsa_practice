@@ -17,6 +17,11 @@ function bobIsFirst(people){
   return people[0] == 'bob'
 }
 ```
+
+0(1)
+a constant function with a constant time/space it will require to run. 
+it's simplest component is itself.
+
 ---
 Function 2 Time Complexity:
 
@@ -33,6 +38,11 @@ function wordOccurrence(word, phrase){
   return result
 }
 ```
+
+0(n)
+this function requires more time as the input increases.
+linear progression of input vs time needed.
+
 ---
 Function 3 Time Complexity:
 
@@ -52,20 +62,77 @@ function sort(list){
 }
 ```
 
+0(nˆ2)
+this function requires exponentially more time to run as the input increases.
+for each additional piece of data, (n) must be ran (n)(n) times 
+because of the double nested looping.
+
 ---
 
 ### Written Questions
 
 - What method would you use to look up a word in a dictionary (book, not Python)?
+quick sort. quick sort is very intuitive and quick, has the fastest worst case. 
+a "normal" human thought process behind finding a word in the dictionary would be 
+dividing the dictionary into smaller and smaller chunks until we feel close enough
+to the primary key that our chunks have become individual pages to flip through.
+
+this method is faster more often than flipping individual pages from front or back, 
+regardless of where the word is actually located.
 
 - Imagine you have a closet full of shirts. What can you do to organize your shirts for easy retrieval?
+sort them based on a unique identifier or an identifier that would allow easily recognizable groupings.
 
 - Describe advantages and disadvantages of the most popular sorting algorithms.
+advantages of most popular sorting algorithms is that we already know their worst case, their average cases, and their best cases in terms of Big O notation. We also know what specific use cases each one would be best suited for. However, this is also a disadvantage of theirs. They have specific use cases and using a sorting algorithm incorrectly can leave you spending much more time and memory than you should if you aren't careful with your selections.
 
 ---
 
 ### HackerRank Problems
 
 - [Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference/problem) (Algorithm, Warmup)
+
+```javascript 
+
+function diagonalDifference(arr) {
+    // Write your code here
+    let sum = 0
+    let firstDiagonal = 0
+    let secondDiagonal = 0
+    for(let i = 0; i < arr.length; i++){
+        firstDiagonal += arr[i][i]
+        secondDiagonal += arr[i][arr.length - (1 + i)]
+    }
+    sum = firstDiagonal - secondDiagonal
+    return Math.abs(sum)
+}
+```
+
 - [Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation/problem) (Data Structures, Array)
+
+```javascript
+function rotateLeft(d, arr) {
+    // Write your code here
+    for(let i = 0; i < d; i++){
+        let rotatedValue = arr[0]
+        arr.shift()
+        arr.push(rotatedValue)
+    }
+    return arr
+}
+```
+
 - [Get Node Value](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail) (Data Structures, Linked List)
+
+```javascript
+function getNode(head, positionFromTail) {
+    let thisNode = head
+    for(let i = 0; head.next !== null; i++){
+        head = head.next
+        if( i >= positionFromTail){
+            thisNode = thisNode.next
+        }
+    }
+    return thisNode.data
+}
+```
