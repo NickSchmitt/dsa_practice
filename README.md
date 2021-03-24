@@ -72,7 +72,7 @@ because of the double nested looping.
 ### Written Questions
 
 - What method would you use to look up a word in a dictionary (book, not Python)?
-quick sort. quick sort is very intuitive and quick, has the fastest worst case. 
+merge sort. merge sort is very intuitive and quick, has the fastest worst case. 
 a "normal" human thought process behind finding a word in the dictionary would be 
 dividing the dictionary into smaller and smaller chunks until we feel close enough
 to the primary key that our chunks have become individual pages to flip through.
