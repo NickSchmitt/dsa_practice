@@ -93,7 +93,6 @@ advantages of most popular sorting algorithms is that we already know their wors
 - [Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference/problem) (Algorithm, Warmup)
 
 ```javascript 
-
 function diagonalDifference(arr) {
     // Write your code here
     let sum = 0
@@ -107,6 +106,19 @@ function diagonalDifference(arr) {
     return Math.abs(sum)
 }
 ```
+
+```python
+def diagonalDifference(arr):
+  sum = 0
+  first_diagonal = 0
+  second_diagonal = 0
+  for i in len(arr):
+    first_diagonal += arr[i][i]
+    second_diagonal += arr[i][len(arr) - (1 + i)]
+  sum = first_diagonal - second_diagonal
+  return abs(sum)
+```
+
 
 - [Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation/problem) (Data Structures, Array)
 
