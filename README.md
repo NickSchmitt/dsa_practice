@@ -134,6 +134,16 @@ function rotateLeft(d, arr) {
 }
 ```
 
+```python
+def rotateLeft(d, arr):
+  for i in arr:
+    while(i < d):
+      rotated_value = arr[0]
+      arr.pop(arr[len(arr) - 1])
+      arr.append(rotated_value)
+  return arr
+```
+
 - [Get Node Value](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail) (Data Structures, Linked List)
 
 ```javascript
