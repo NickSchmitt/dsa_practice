@@ -1,7 +1,7 @@
 # Data Structures and Algorithms
 
 1. Fork and clone this repo
-2. Fill out the Big O and Written questions in this read me.
+2. Fill out the Big O and Written Questions in this README.
 3. Complete the HackerRank challenges on hackerrank.com
 4. You have 1 hour and 20 minutes
 
@@ -71,6 +71,10 @@ function sort(list){
 
 - [Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference/problem) (Algorithm, Warmup)
 - [Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation/problem) (Data Structures, Array)
+<<<<<<< HEAD
   - [rotate_array.py](rotate_array.py)
 - [Get Node Value](ckerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/) (Data Structures, Linked List)
   - [get_node_value.py](get_node_value.py)
+=======
+- [Get Node Value](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail) (Data Structures, Linked List)
+>>>>>>> 64d437c9975b8b8c90cc456d423fea98f45101d2
