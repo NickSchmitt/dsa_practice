@@ -57,10 +57,13 @@ function sort(list){
 ### Written Questions
 
 - What method would you use to look up a word in a [dictionary](https://en.wikipedia.org/wiki/Dictionary) (book of words, not a Python dict)?
+  - Binary search. The logarithmic time complexity will allow us to find a word in a 200,000 word dictionary in just 18 searches.
 
 - Imagine you have a closet full of shirts. What can you do to organize your shirts for easy retrieval?
+  - Take a property, such as color, sort the shirts by that value (e.g. RGB value), then retrieve a shirt using binary search!
 
 - Describe advantages and disadvantages of the most popular sorting algorithms.
+  - [sorting_algorithms.md](sorting_algorithms.md)
 
 ---
 
@@ -68,4 +71,6 @@ function sort(list){
 
 - [Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference/problem) (Algorithm, Warmup)
 - [Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation/problem) (Data Structures, Array)
+  - [rotate_array.py](rotate_array.py)
 - [Get Node Value](ckerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/) (Data Structures, Linked List)
+  - [get_node_value.py](get_node_value.py)
